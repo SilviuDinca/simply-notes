@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="sal mynotes-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="px-5 pt-5">
+      <div class="container">
+        <h1 class="title has-text-info">Create new card</h1>
+      </div>
+    </section>
+    <section class="px-5 pt-5">
+      <div class="container">
+        <h3 class="text-color is-size-5 mb-3">Select color</h3>
+        <div class="columns is-multiline is-mobile">
+          <div class="column">
+            <button class="color button is-fullwidth is-info is-medium">
+              <span class="icon is-medium">
+                <i class="fas fa-tint"></i>
+              </span>
+            </button>
+          </div>
+          <div class="column">
+            <button class="color button is-fullwidth is-warning is-medium">
+              <span class="icon is-medium">
+                <i class="fas fa-tint"></i>
+              </span>
+            </button>
+          </div>
+          <div class="column">
+            <button class="color button is-fullwidth is-danger is-medium">
+              <span class="icon is-medium">
+                <i class="fas fa-tint"></i>
+              </span>
+            </button>
+          </div>
+          <div class="column">
+            <button class="color button is-fullwidth is-success is-medium">
+              <span class="icon is-medium">
+                <i class="fas fa-tint"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-5 pt-5">
+      <div class="container">
+        <div class="field">
+          <label class="text-color label">Title</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="card-con input is-primary card-title"
+              type="text"
+              placeholder="Your title is..."
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-book-open"></i>
+            </span>
+          </div>
+          <p class="title-help help is-danger is-hidden">
+            Card title can't be empty
+          </p>
+        </div>
+        <div class="field">
+          <label class="text-color label">Message</label>
+          <div class="control">
+            <textarea
+              class="card-con textarea is-primary card-body"
+              placeholder="Write a message..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <a href="./index.html">
+            <button class="back-button button is-light is-primary mr-3">
+              Back
+            </button></a
+          >
+          <button class="save-card-button button is-primary">Save notes</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./assets/js/add-card.js"></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+  ></script>
+</html>

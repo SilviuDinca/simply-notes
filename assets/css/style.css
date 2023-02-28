@@ -1,0 +1,52 @@
+.mynotes-light {
+  --bg-color: #ffffff;
+}
+
+.mynotes-dark {
+  --bg-color: #212121;
+  --card-color: #333333;
+  --text-color: #ffffff;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+}
+
+.card-theme {
+  background-color: var(--card-color);
+}
+
+.card-con {
+  background-color: var(--card-color);
+  color: var(--text-color);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+@font-face {
+  font-family: BlinkerRegular;
+  src: url(../fonts/Blinker-Regular.ttf);
+}
+
+@font-face {
+  font-family: BlinkerBold;
+  src: url(../fonts/Blinker-Bold.ttf);
+}
+
+.title,
+.task {
+  font-family: BlinkerRegular;
+}
+
+.add-button {
+  position: fixed;
+  border-radius: 100%;
+  bottom: 16px;
+  right: 16px;
+}
+pre {
+  background-color: white;
+}

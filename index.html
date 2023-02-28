@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="sal mynotes-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/brands.min.css" />
+    <link rel="stylesheet" href="./assets/css/solid.min.css" />
+    <link rel="stylesheet" href="./assets/css/switch.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">MyNotes</h1>
+        </div>
+      </div>
+    </header>
+    <section class="mt-5 mr-5 is-flex is-justify-content-flex-end">
+      <span class="icon has-text-warning">
+        <i class="fas fa-sun"></i>
+      </span>
+      <input
+        id="switchThinColorDefault"
+        type="checkbox"
+        name="switchThinColorDefault"
+        class="switch is-thin"
+      />
+      <label for="switchThinColorDefault"></label>
+      <span class="icon has-text-warning">
+        <i class="fas fa-moon"></i>
+      </span>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline cards-container"></div>
+      </div>
+    </section>
+    <a href="./add-card.html"
+      ><button class="button is-primary is-medium add-button">
+        <span class="icon">
+          <i class="fas fa-plus"></i>
+        </span></button
+    ></a>
+    <p class="task subtitle is-3 mt-5 has-text-centered has-text-grey">
+      No notes added
+    </p>
+  </body>
+  <script src="./assets/js/luxon.js"></script>
+  <script src="./assets/js/index.js"></script>
+</html>
